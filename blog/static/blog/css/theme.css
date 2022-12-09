@@ -1,0 +1,27 @@
+h1 a {
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #778899;
+    text-shadow: 5px 5px 5px gray;
+
+
+
+
+}
+
+h2 a{
+    color: #778899;
+    background-color: #FCA205:
+    background-color: #3a9999
+    font-family: inherit
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 0 20px 20px 20px;
+  font: italic small-caps bold 16px/2 cursive;
+  color: #778899;
+
+}

@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+{% load widget_tweaks %}
+{% block content %}
+<h1>
+    {% if form.instance.id %}
+    Комментарий: {{ form.instance.title }}
+    {% endif %}
+</h1>
+
+<form method="POST" class="post-form">
+    {% csrf_token %}
+    <div class="form_group">
+        {{ form.title.label_tag }}
+        {{ form.title|add_class:"form-control" }}
+    </div>
+    <div class="form-group">
+        {{ form.text.label_tag }}
+        {{ form.text|add_class:"form-control" }}
+    </div>
+    <button type="submit" class="save btn btn-default">Сохранить</button>
+</form>
+{% endblock %}
